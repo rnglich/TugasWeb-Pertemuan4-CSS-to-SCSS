@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="
+    Ini adalah web yang berisikan biodata saya yang nantinya akan diupdate menjadi sebuah portofolio
+    pribadi saya">
+    <meta property="og:title" content="Biodata Rangga">
+    <meta property="og:description" content="Web yang isinya biodata pribadi yang nantinya mau dibuat jadi portofolio">
+    <meta property="og:type" content="website">
+    <!--<meta name="color-scheme" content="light dark"> -->
+    <title>Biodata</title>
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+    <input type="checkbox" id="mode">
+        <label for="mode" class="ubah-warna">Ganti Tema</label>
+    <header>
+        <h1>My Biodata</h1>
+        <p>Selamat datang di biodata saya</p>
+    </header>
+    <nav class="info">
+        <ul>
+        <li><a href="#profil">My Profil</a></li>
+        <li><a href="#riwayat">My Riwayat Pendidikan</a></li>
+        <li><a href="#pengalaman">My Pengalaman</a></li>
+        <li><a href="#kontak">Hubungi Aku</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="profil">
+            <h2>
+                My Profil
+            </h2>
+            <figure>
+                <img src="img/retro3.jpeg" alt="My Foto" class="foto">
+                <figcaption class="infofoto">My Foto (kalo yang mau kenalan)</figcaption>
+            </figure>
+            <article>
+                <p>
+                    Halo semua, Aku Rangga Wardhana Al Hafitz kalian bisa panggil aku Rangga, ranga, rangguy atau apapun itu. Sekarang aku mahasiswa semester 3 di Universitas Negeri Medan
+                    dengan prodi Ilmu Komputer. Kalo boleh dibilang aku orangnya punya minat yang besar untuk setiap hal yang ku suka. Contohnya kaya film, musik atau apapun itu. Oiya aku juga
+                    orangnya bertanggung jawab, mudah beradaptasi dengan lingkungan baru ataupun tantangan.
+                </p>
+            </article>
+        </section>
+        <section id="riwayat">
+            <h2>
+                My Riwayat Pendidikan
+            </h2>
+            <ul>    
+                <li>      
+                    <h3>
+                        Sekolah Menengah Atas (SMA)
+                    </h3>
+                    <p>
+                        Saya adalah lulusan dari SMA Negeri 1 Galang dengan jurusan IPA yang dimulai dari tahun <time datetime="2022">2022</time> 
+                        dan selesai pada tahun <time datetime="2025">2025</time>.
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        Perguruan Tinggi
+                    </h3>
+                <p>
+                    Saat ini saya adalah seorang mahasiswa aktif di Universitas Negeri Medan dengan prodi ilmu komputer.
+                </p>
+                </li>
+            </ul>
+            <aside>
+                <p><strong>Notes :</strong>Aku suka teknologi-teknologi komputer, smartphone, konsol, game, dan lain sebagainya yang semakin berkembang setiap tahunnya.
+                aku juga suka main game btw jadi kalo ada yang mau mabar boleh hubungi aku langsung. Langsung saja reg.
+                </p>
+                <p>
+                <label for="gaya_main">Gaya main mu cuy (Santai-Kompe)</label>
+                <input type="range" id="gaya_main" min="1" max="10">
+                </p>
+            </aside>
+        </section>
+        <section id="pengalaman">
+            <h2>
+                My Pengalaman
+            </h2>
+            <ul>
+                <li>
+                    Menjadi wakil ketua organisasi Rohani Islam(Rohis) saat SMA dengan periode <time datetime="2023">2023</time> sampai dengan <time datetime="2024">2024.</time>
+                </li>
+                <li>
+                    Aktif dalam kegiatan kepanitiaan di Desa mulai dari panitia 17 Agustus, panitia peringatan Maulid Nabi serta panitia peringatan Isra Miraj.
+                </li>
+            </ul>
+        </section>
+        <section id="kontak">
+            <h2>
+                Hubungi Aku
+            </h2>
+            <form action="#" method="GET">
+                <p>
+                    <label for="nama">Tulis Nama : </label>
+                    <input type="text" id="nama" name="nama" required>
+                </p>
+                <p>
+                    <label for="email">Tulis Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="pesan">Tulis Pesan : </label>
+                    <textarea type= id="pesan" name="pesan" rows="11" required></textarea>
+                <p>
+                    <button type="submit">Chat Aku!</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rangga. All rights reserved.</p>
+    </footer>    
+</body>
+</html>

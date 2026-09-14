@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as var;
+
+body:has(#mode:checked){
+    background-color: var.$text-dark;
+    color: var.$bg-light;
+
+            .ubah-warna{
+                background-color: var.$dark-mode-bg;
+                color: var.$bg-light;
+            }
+            
+            #kontak{
+                background-color: #4a1c03;
+                color: var.$bg-light;
+
+                label{
+                    color: #e0e0e0;
+                }
+            }
+
+    aside{
+        background-color: #453c0a;
+        color: var.$bg-light;
+    }
+
+    nav{
+        #info{
+            color: var.$bg-light;
+        }
+
+        a{
+            color: var.$bg-light;
+            background-color: transparent;
+            border: none;
+
+            &hover{
+                background-color: #555555;
+            }
+        }
+    }
+}

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Play&family=Press+Start+2P&family=Silkscreen&display=swap");
+body {
+  background-color: #ffffff;
+  color: #121212;
+  min-height: 100vh;
+  transition: 0, 3s;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Silkscreen", cursive;
+  font-size: 20px;
+  text-align: center;
+  background-color: #00a6ff;
+  border-style: ridge;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+article p, #riwayat, #pengalaman {
+  font-family: "JetBrains Mono", Monospace;
+  font-size: 15px;
+  text-align: justify;
+}
+
+button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Silkscreen", cursive;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ubah-warna {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #00a6ff;
+  color: #121212;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 10px;
+  height: auto;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  font-family: "Silkscreen", cursive;
+}
+.ubah-warna:hover {
+  background-color: #0084cc;
+  transform: translateY(-2px);
+}
+
+#mode {
+  display: none;
+}
+
+#kontak {
+  background-color: #ff914d;
+  color: #333;
+  border-radius: 16px;
+  padding: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#kontak label {
+  display: flex;
+  margin-top: 8px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+#kontak textarea, #kontak input[type=email], #kontak input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #00a6ff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#kontak textarea:focus, #kontak input[type=email]:focus, #kontak input[type=text]:focus {
+  outline: none;
+  border-color: #00a6ff;
+}
+#kontak button:hover {
+  background-color: antiquewhite;
+}
+
+figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  border: 4px groove #00a6ff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.foto {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin: 20px auto;
+  font-size: 15px;
+  font-family: "JetBrains Mono", Monospace;
+}
+
+.infofoto {
+  text-align: center;
+}
+
+footer p {
+  font-size: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: #00a6ff;
+  border-radius: 50px;
+  border-style: ridge;
+  text-align: center;
+  font-family: "Silkscreen", cursive;
+  padding: 20px;
+  color: #ffffff;
+}
+header p {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: transparent;
+  padding: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+nav a {
+  color: #121212;
+  text-decoration: none;
+  font-family: "JetBrains Mono", Monospace;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.info {
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+.info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.info a:hover {
+  color: #007bff;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+aside {
+  background-color: #ffde59;
+  color: #121212;
+  border-radius: 16px;
+  padding: 15px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: oblique;
+}
+aside input[type=range],
+aside textarea {
+  height: 10px;
+  margin-top: 20px;
+}
+
+#pengalaman ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+#pengalaman ul li {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+body:has(#mode:checked) {
+  background-color: #121212;
+  color: #ffffff;
+}
+body:has(#mode:checked) .ubah-warna {
+  background-color: #333333;
+  color: #ffffff;
+}
+body:has(#mode:checked) #kontak {
+  background-color: #4a1c03;
+  color: #ffffff;
+}
+body:has(#mode:checked) #kontak label {
+  color: #e0e0e0;
+}
+body:has(#mode:checked) aside {
+  background-color: #453c0a;
+  color: #ffffff;
+}
+body:has(#mode:checked) nav #info {
+  color: #ffffff;
+}
+body:has(#mode:checked) nav a {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+body:has(#mode:checked) nav ahover {
+  background-color: #555555;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as var;
+
+figure{
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50px;
+        border: 4px groove var.$primary-color;
+        object-fit: cover;
+        display: inline-block;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.foto{
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption{
+    margin: var.$spacing-lg auto;
+    font-size: 15px;
+    font-family: var.$font-mono;
+}
+
+.infofoto{
+    text-align: center;
+}

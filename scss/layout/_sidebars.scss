@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+aside{
+    @include mix.box-style(var.$bg-aside, var.$text-dark, 16px, var.$spacing-md);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: oblique;
+    
+    input[type="range"],
+    textarea{
+        height: 10px;
+        margin-top: var.$spacing-lg;
+    }
+}

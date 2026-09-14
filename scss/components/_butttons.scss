@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as var;
+
+button{
+    width: 100px;
+    padding: var.$spacing-sm;
+    border-radius: 8px;
+    border: none;
+    font-family: var.$font-cursive;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ubah-warna {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: var.$primary-color;
+    color: var.$text-dark;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 10px;
+    height: auto;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: var.$spacing-md;
+    font-family: var.$font-cursive;
+
+
+    &:hover{
+    background-color: #0084cc;
+    transform: translateY(-2px);
+    }
+
+}
+#mode{
+    display: none;
+}

@@ -1,0 +1,24 @@
+@use 'variables' as var;
+
+//aturfont
+@mixin font-setup($family, $size, $align: left){
+    font-family: $family;
+    font-size: $size;
+    text-align: $align;
+}
+
+//aturtataletak
+@mixin flex-center ($gap: 0){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+//aturstyle
+@mixin box-style ($bg, $color, $radius:16px, $pad:var.$spacing_md){
+    background-color: $bg;
+    color: $color;
+    border-radius: $radius;
+    padding: $pad;
+    transition: background-color 0.3s, color 0.3s;
+}
