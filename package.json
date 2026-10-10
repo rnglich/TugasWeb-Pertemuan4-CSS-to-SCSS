@@ -1,0 +1,26 @@
+{
+  "name": "tr-4i",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss scss/main.css --style=expanded --source-map",
+    "sass:compressed": "sass scss/main.scss scss/main.css --style=compressed --source-map",
+    "build": "npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnglich/TugasWeb-Pertemuan4-CSS-to-SCSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rnglich/TugasWeb-Pertemuan4-CSS-to-SCSS/issues"
+  },
+  "homepage": "https://github.com/rnglich/TugasWeb-Pertemuan4-CSS-to-SCSS#readme",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}

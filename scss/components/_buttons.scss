@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as var;
+
+button {
+    width: 120px;
+    padding: 10px;
+    border-radius: var.$radius-sm;
+    border: none;
+    font-family: var.$font-cursive;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: var.$primary-color;
+    color: var.$bg-light;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        filter: brightness(1.1);
+        transform: translateY(-2px);
+    }
+}

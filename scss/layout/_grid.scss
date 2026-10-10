@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+// Layout utama Grid - samakan TR-1&2 style.css body
+body {
+    display: grid;
+    gap: var.$gap-grid;
+    background-color: var.$bg-light;
+    color: var.$text-dark;
+    min-height: 100vh;
+    padding: var.$spacing-lg;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: var.$font-mono;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+
+    @include mix.respond-to(var.$breakpoint-md) {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer";
+    }
+}
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }

@@ -15,10 +15,17 @@
     gap: $gap;
 }
 //aturstyle
-@mixin box-style ($bg, $color, $radius:16px, $pad:var.$spacing_md){
+@mixin box-style($bg, $color, $radius: 16px, $pad: var.$spacing-lg) {
     background-color: $bg;
     color: $color;
     border-radius: $radius;
     padding: $pad;
     transition: background-color 0.3s, color 0.3s;
+}
+
+// Mixin ke-4: media query helper (dipakai grid)
+@mixin respond-to($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
 }

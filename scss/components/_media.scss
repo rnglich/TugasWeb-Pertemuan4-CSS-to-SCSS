@@ -1,10 +1,13 @@
 @use '../abstracts/variables' as var;
 
-figure{
-    img{
+figure {
+    text-align: center;
+    margin: var.$spacing-lg 0;
+
+    img {
         width: 150px;
         height: 150px;
-        border-radius: 50px;
+        border-radius: var.$radius-pill;
         border: 4px groove var.$primary-color;
         object-fit: cover;
         display: inline-block;
@@ -12,17 +15,16 @@ figure{
     }
 }
 
-.foto{
+.foto {
     display: block;
     margin: 0 auto;
 }
 
-figcaption{
-    margin: var.$spacing-lg auto;
+figcaption {
+    margin-top: 10px;
     font-size: 15px;
-    font-family: var.$font-mono;
 }
 
-.infofoto{
+.infofoto {
     text-align: center;
 }

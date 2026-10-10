@@ -1,17 +1,37 @@
-//warna
+// Warna - samakan TR-1&2 style.css :root
 $primary-color: #00a6ff;
 $bg-light: #ffffff;
 $text-dark: #121212;
 $bg-aside: #ffde59;
 $bg-contact: #ff914d;
-$dark-mode-bg:#333333;
+$border-color: #00a6ff;
+$dark-mode-bg: #333333;
 
-//font
-$font-mono:'JetBrains Mono',Monospace;
-$font-sans: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+// Dark mode (prefers-color-scheme) - samakan ref
+$dark-primary: #0084cc;
+$dark-bg: #121212;
+$dark-text: #ffffff;
+$dark-aside: #453c0a;
+$dark-contact: #4a1c03;
+$dark-border: #333333;
+
+// Font
+$font-mono: 'JetBrains Mono', monospace;
+$font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $font-cursive: 'Silkscreen', cursive;
 
-//spacing
+// Spacing - untuk colors & spacing requirement
 $spacing-sm: 5px;
 $spacing-md: 15px;
 $spacing-lg: 20px;
+$spacing-xl: 25px;
+$spacing-xxl: 30px;
+$gap-grid: 20px;
+
+// Radius
+$radius-pill: 50px;
+$radius-card: 16px;
+$radius-sm: 8px;
+
+// Breakpoint
+$breakpoint-md: 768px;

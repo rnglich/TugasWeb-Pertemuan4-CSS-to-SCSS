@@ -1,6 +1,11 @@
-footer{
-    p{
-        font-size: 10px;
-        text-align: center;
+@use '../abstracts/variables' as var;
+
+footer {
+    text-align: center;
+    padding-top: var.$spacing-lg;
+    border-top: 1px dashed var.$border-color;
+
+    p {
+        font-size: 12px;
     }
 }

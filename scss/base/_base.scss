@@ -1,25 +1,29 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/mixins' as mix;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Play&family=Press+Start+2P&family=Silkscreen&display=swap');
-//aturbody
-body{
-    background-color: var.$bg-light;
-    color: var.$text-dark;
-    min-height: 100vh;
-    transition: 0,3s;
-    padding: var.$spacing-lg;
+// Global box-sizing - samakan ref style.css
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-//aturh2
-h2{
+
+// Tipografi dasar + h2 - samakan ref
+h2 {
     @include mix.font-setup(var.$font-cursive, 20px, center);
     background-color: var.$primary-color;
-    border-style: ridge;
-    border-radius: 50px;
+    border: 4px ridge var.$border-color;
+    border-radius: var.$radius-pill;
     color: var.$bg-light;
+    padding: 10px;
+    margin-bottom: var.$spacing-lg;
 }
-//atur article p
-article p, #riwayat, #pengalaman{
-    @include mix.font-setup(var.$font-mono, 15px, justify);
+
+p,
+article p,
+#riwayat p,
+#pengalaman li {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
 }

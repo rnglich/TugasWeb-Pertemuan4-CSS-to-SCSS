@@ -1,41 +1,50 @@
 @use '../abstracts/variables' as var;
 
-body:has(#mode:checked){
-    background-color: var.$text-dark;
-    color: var.$bg-light;
-
-            .ubah-warna{
-                background-color: var.$dark-mode-bg;
-                color: var.$bg-light;
-            }
-            
-            #kontak{
-                background-color: #4a1c03;
-                color: var.$bg-light;
-
-                label{
-                    color: #e0e0e0;
-                }
-            }
-
-    aside{
-        background-color: #453c0a;
-        color: var.$bg-light;
+// Dark mode otomatis - samakan TR-1&2 style.css
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var.$dark-bg;
+        color: var.$dark-text;
     }
 
-    nav{
-        #info{
-            color: var.$bg-light;
-        }
+    header {
+        background-color: var.$dark-primary;
+    }
 
-        a{
-            color: var.$bg-light;
-            background-color: transparent;
-            border: none;
+    h2 {
+        background-color: var.$dark-primary;
+    }
 
-            &hover{
-                background-color: #555555;
+    button {
+        background-color: var.$dark-primary;
+    }
+
+    .info {
+        a {
+            color: var.$dark-text;
+
+            &:hover {
+                color: var.$dark-primary;
+                border-bottom-color: var.$dark-primary;
             }
         }
+    }
+
+    aside {
+        background-color: var.$dark-aside;
+        color: var.$dark-text;
+    }
+
+    #kontak {
+        background-color: var.$dark-contact;
+        color: var.$dark-text;
+
+        label {
+            color: var.$dark-text;
+        }
+    }
+
+    footer {
+        border-top-color: var.$dark-border;
     }
 }

@@ -3,13 +3,14 @@
 
 @use 'base/base';
 
-@use 'components/butttons';
+@use 'components/buttons';
 @use 'components/forms';
 @use 'components/media';
 
-@use 'layout/footer';
+@use 'layout/grid';
 @use 'layout/header';
 @use 'layout/sidebars';
+@use 'layout/footer';
 
 @use 'pages/home';
 

@@ -2,45 +2,43 @@
 @use "../abstracts/mixins" as mix;
 
 #kontak {
-  @include mix.box-style(var.$bg-contact, #333, 16px, 25px);
-  font-family: var.$font-sans;
+  @include mix.box-style(var.$bg-contact, var.$text-dark, var.$radius-card, var.$spacing-xl);
+  margin-top: var.$spacing-xxl;
 
-  label {
-    display: flex;
-    margin-top: 8px;
-    font-weight: bold;
-    transition: color 0.3s;
+  form p {
+    margin-bottom: var.$spacing-md;
   }
 
-  // 1. Buat Placeholder (cetakan gaya) menggunakan simbol %
+  label {
+    display: block;
+    margin-bottom: var.$spacing-sm;
+    font-weight: bold;
+    color: var.$text-dark;
+  }
+
   %input-shared-style {
     width: 100%;
-    padding: var.$spacing-sm;
-    margin-bottom: var.$spacing-md;
-    border: 2px solid var.$primary-color;
-    border-radius: 8px;
-    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid var.$border-color;
+    border-radius: var.$radius-sm;
     font-family: var.$font-sans;
+    background-color: var.$bg-light;
+    color: var.$text-dark;
 
     &:focus {
       outline: none;
       border-color: var.$primary-color;
+      box-shadow: 0 0 5px var.$primary-color;
     }
   }
 
-  // 2. Gunakan @extend memanggil placeholder tersebut ke input
   @each $type in (text, email) {
     input[type="#{$type}"] {
       @extend %input-shared-style;
     }
   }
 
-  // 3. Gunakan @extend yang sama ke textarea
   textarea {
     @extend %input-shared-style;
-  }
-
-  button:hover {
-    background-color: antiquewhite;
   }
 }
